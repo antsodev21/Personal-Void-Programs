@@ -14,7 +14,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Desde XBPS :
 sudo xbps-install kitty steam telegram-desktop strawberry obs libresprite kdenlive filezilla virt-manager qemu audacity lutris
 # Desde Flatpak :
-flatpak install discord vscodium obsidian retroarch protonplus Sober gearlever
+flatpak install discord vscodium obsidian retroarch protonplus Sober gearlever PlexDesktop
 
 # Librerias y Drivers de 32-bits de Steam :
 sudo xbps-install -Syu libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-intel mesa-vulkan-intel-32bit vulkan-loader-32bit
