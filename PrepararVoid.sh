@@ -14,7 +14,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Desde XBPS :
 sudo xbps-install kitty steam telegram-desktop strawberry obs libresprite kdenlive filezilla virt-manager qemu audacity lutris
 # Desde Flatpak :
-flatpak install discord vscodium obsidian retroarch protonplus Sober gearlever PlexDesktop
+flatpak install discord vscodium obsidian retroarch protonplus Sober gearlever 
 
 # Librerias y Drivers de 32-bits de Steam :
 sudo xbps-install -Syu libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-intel mesa-vulkan-intel-32bit vulkan-loader-32bit
@@ -30,9 +30,9 @@ sudo ln -s /etc/sv/virt* /var/service/
 # Arreglando un Archivo para que Lutris Funcione
 sudo echo "antsoftware21 hard nofile 524288" >> /etc/security/limits.conf
 
-# Instala OhMyBash :
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-
 # Instala OpenCode :
 curl -fsSL https://opencode.ai/install | bash
+
+# Instala OhMyBash :
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
