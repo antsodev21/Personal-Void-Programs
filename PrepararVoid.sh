@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #==LISTA-DE-PAQUETES/HERRAMIENTAS-MISCELANEOS==#
-sudo xbps-install -S fastfetch git curl wget htop btop cava tty-clock openjdk21-jre flatpak tailscale papirus-icon-theme zip unzip 7zip dialog
+sudo xbps-install -S nano fastfetch git curl wget htop btop cava tty-clock openjdk21-jre flatpak tailscale papirus-icon-theme zip unzip 7zip dialog
 
 #==LISTA-DE-REPOSITORIOS==#
 sudo xbps-install -S void-repo-nonfree
@@ -12,7 +12,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 #==LISTA-DE-PAQUETES==#
 # Desde XBPS :
-sudo xbps-install kitty steam telegram-desktop strawberry obs libresprite kdenlive filezilla virt-manager qemu krita lutris
+sudo xbps-install kitty steam telegram-desktop strawberry obs libresprite kdenlive filezilla virt-manager qemu krita lutris vlc
 # Desde Flatpak :
 flatpak install discord vscodium obsidian retroarch protonplus Sober gearlever rnote
 
@@ -33,6 +33,16 @@ sudo echo "antsoftware21 hard nofile 524288" >> /etc/security/limits.conf
 # Instala OpenCode :
 curl -fsSL https://opencode.ai/install | bash
 
+# Instala Katifetch
+git clone https://github.com/ximimoments/katifetch
+cd katifetch/
+bash install.sh
+cd ..
+
 # Instala OhMyBash :
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
+# Copia mi Configuracion de Bash y la Terminal
+sudo cp .bashrc ~/.bashrc
+sudo cp -r config/kitty ~/.config
 
