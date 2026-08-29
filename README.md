@@ -1,2 +1,2 @@
 # Ejecucion
-´´´bash PrepararVoid.sh´´´
+```bash PrepararVoid.sh```
