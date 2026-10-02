@@ -14,7 +14,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Desde XBPS :
 sudo xbps-install kitty steam telegram-desktop strawberry obs libresprite kdenlive filezilla virt-manager qemu krita vlc
 # Desde Flatpak :
-flatpak install discord vscodium obsidian retroarch portproton protonplus Sober gearlever rnote
+flatpak install discord vscodium obsidian retroarch portproton protonplus Sober gearlever rnote gimp nicotine transmission
 
 # Librerias y Drivers de 32-bits de Steam :
 sudo xbps-install -Syu libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-intel mesa-vulkan-intel-32bit vulkan-loader-32bit
@@ -36,10 +36,9 @@ cd katifetch/
 bash install.sh
 cd ..
 
-# Instala OhMyBash :
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-
 # Copia mi Configuracion de Bash y la Terminal
 sudo cp .bashrc ~/.bashrc
 sudo cp -r config/kitty ~/.config
 
+# Instala OhMyBash :
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
